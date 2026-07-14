@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Official portfolio of Himanshu Raj, also known as VCT — trader, creator, gamer, editor and support professional."
+    >
+
+    <meta name="theme-color" content="#05070d">
+
+    <title>Himanshu Raj | VCT</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         PRELOADER
+    ========================== -->
+    <div class="preloader" id="preloader">
+
+        <div class="loader-orbit">
+
+            <div class="loader-core">
+                <span>VCT</span>
+            </div>
+
+            <div class="loader-ring loader-ring-one"></div>
+            <div class="loader-ring loader-ring-two"></div>
+            <div class="loader-ring loader-ring-three"></div>
+
+        </div>
+
+        <p class="loader-text">
+            Initializing VCT Universe
+            <span class="loading-dots">...</span>
+        </p>
+
+        <div class="loader-progress">
+            <div class="loader-progress-bar" id="loaderProgressBar"></div>
+        </div>
+
+        <span class="loader-percentage" id="loaderPercentage">0%</span>
+
+    </div>
+
+
+    <!-- =========================
+         GLOBAL EFFECTS
+    ========================== -->
+
+    <canvas id="particleCanvas"></canvas>
+
+    <div class="noise-overlay"></div>
+
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+
+
+    <!-- =========================
+         BACKGROUND MUSIC
+    ========================== -->
+
+    <!--
+        Apna music same folder me "background-music.mp3" naam se rakho.
+        Music automatically force-play nahi hoga because browsers block autoplay.
+    -->
+
+    <audio id="backgroundMusic" loop>
+        <source src="background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button
+        class="music-toggle"
+        id="musicToggle"
+        aria-label="Toggle background music"
+        title="Background Music"
+    >
+        <i class="fa-solid fa-volume-xmark" id="musicIcon"></i>
+        <span>Music</span>
+    </button>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="header" id="header">
+
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+
+                <span class="logo-icon">
+                    V
+                </span>
+
+                <span class="logo-text">
+                    VCT
+                </span>
+
+            </a>
+
+
+            <div class="nav-menu" id="navMenu">
+
+                <a href="#home" class="nav-link active">
+                    Home
+                </a>
+
+                <a href="#about" class="nav-link">
+                    About
+                </a>
+
+                <a href="#skills" class="nav-link">
+                    Skills
+                </a>
+
+                <a href="#experience" class="nav-link">
+                    Experience
+                </a>
+
+                <a href="#project" class="nav-link">
+                    Project
+                </a>
+
+                <a href="#achievements" class="nav-link">
+                    Achievements
+                </a>
+
+                <a href="#interests" class="nav-link">
+                    Interests
+                </a>
+
+                <a href="#contact" class="nav-link">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="nav-actions">
+
+                <a
+                    href="https://wa.me/2250142987393?text=Hi%20Himanshu%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20work%20with%20you."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="nav-contact-button"
+                >
+                    Hire Me
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+
+        <section class="hero section" id="home">
+
+            <div class="hero-background">
+
+                <div class="hero-grid"></div>
+
+                <div class="energy-orb energy-orb-one"></div>
+                <div class="energy-orb energy-orb-two"></div>
+                <div class="energy-orb energy-orb-three"></div>
+
+                <div class="floating-particle particle-one"></div>
+                <div class="floating-particle particle-two"></div>
+                <div class="floating-particle particle-three"></div>
+                <div class="floating-particle particle-four"></div>
+
+            </div>
+
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <div class="availability-badge reveal">
+
+                        <span class="availability-dot"></span>
+
+                        Available for Freelance Work
+
+                    </div>
+
+
+                    <p class="hero-intro reveal">
+                        Hello, I am
+                    </p>
+
+
+                    <h1 class="hero-title reveal">
+
+                        Himanshu Raj
+
+                        <span class="hero-alias">
+                            aka VCT
+                        </span>
+
+                    </h1>
+
+
+                    <h2 class="hero-tagline reveal">
+
+                        Building the Future with
+
+                        <span
+                            class="typing-text"
+                            id="typingText"
+                        >
+                            Creativity
+                        </span>
+
+                    </h2>
+
+
+                    <p class="hero-description reveal">
+
+                        Trader, content creator, gamer, editor and support
+                        professional with more than six years of experience.
+                        I combine strategic thinking, leadership and creativity
+                        to build
